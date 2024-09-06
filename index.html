@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - XYZ Company</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f7f9fc;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Company Section */
+        .company-section {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .company-section .title {
+            font-size: 3rem;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        .company-section .subtitle {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Team Sections */
+        .team-section {
+            padding: 80px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            font-size: 2.5rem;
+            color: #0072ff;
+            margin-bottom: 40px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            background: #f0f0f0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            background-color: #e3f2fd;
+        }
+
+        .team-photo {
+            width: 165px;
+            height: 160px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover .team-photo {
+            transform: scale(1.1);
+        }
+
+        .team-member h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 10px;
+            font-size: 1.2rem;
+            color: #0072ff;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ff55aa;
+            transition: color 0.3s ease;
+        }
+
+        /* Scroll-to-top Button */
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #0072ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #scrollToTopBtn:hover {
+            background: #ff55aa;
+            transition: background 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Company Name Section -->
+    <section id="company" class="company-section">
+        <div class="container">
+            <h1 class="title">Welcome to Our Company</h1>
+            <p class="subtitle">Innovating the Future with Technology</p>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section id="leadership" class="team-section leadership">
+        <div class="container">
+            <h2>Leadership Team</h2>
+            <div class="team-grid">
+                <!-- Leader 1 -->
+                <div class="team-member">
+                    <img src="6.jpeg" alt="Leader 1" class="team-photo">
+                    <h3>Yogi Dodeja</h3>
+                    <p>CEO</p>
+                    <div class="description">Leading strategic directions.</div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yogesh-dodeja-75b478258/">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+                <!-- Leader 2 -->
+                <div class="team-member">
+                    <img src="7.jpeg" alt="Leader 2" class="team-photo">
+                    <h3>Ghanshyambhai Dodeja</h3>
+                    <p>CFO</p>
+                    <div class="description">Financial growth leader.</div>
+                    <div class="social-icons">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+                <!-- More leadership members -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Team Section -->
+    <section id="development" class="team-section development">
+        <div class="container">
+            <h2>Development Team</h2>
+            <div class="team-grid">
+                <!-- Developer 1 -->
+                <div class="team-member">
+                    <img src="3.jpeg" alt="Dev 1" class="team-photo">
+                    <h3>Umang Dhaduk</h3>
+                    <p>Lead Developer</p>
+                    <div class="description">Scalable app expert.</div>
+                    <div class="social-icons">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                <!-- Developer 2 -->
+                <div class="team-member">
+                    <img src="4.jpeg" alt="Dev 2" class="team-photo">
+                    <h3>Readdy Anna</h3>
+                    <p>Frontend Developer</p>
+                    <div class="description">UI/UX master.</div>
+                    <div class="social-icons">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                <!-- Developer 3 -->
+                <div class="team-member">
+                    <img src="5.jpeg" alt="Dev 3" class="team-photo">
+                    <h3>Jaysiddh Panchal</h3>
+                    <p>Mernstack Developer</p>
+                    <div class="description">Databasea master.</div>
+                    <div class="social-icons">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                <!-- Developer 4 -->
+                <div class="team-member">
+                    <img src="1.jpeg" alt="Dev 4" class="team-photo">
+                    <h3>Dhaval Prajapati</h3>
+                    <p>Backend Developer</p>
+                    <div class="description">Python Master.</div>
+                    <div class="social-icons">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sales & Marketing Team Section -->
+    <section id="sales-marketing" class="team-section sales-marketing">
+        <div class="container">
+            <h2>Sales & Marketing Team</h2>
+            <div class="team-grid">
+                <!-- Salesperson 1 -->
+                <div class="team-member">
+                    <img src="1.jpeg" alt="Sales 1" class="team-photo">
+                    <h3>Jatin Soni</h3>
+                    <p>Marketing Manager</p>
+                    <div class="description">Leading marketing strategies.</div>
+                    <div class="social-icons">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <!-- Salesperson 2 -->
+                <div class="team-member">
+                    <img src="2.jpeg" alt="Sales 2" class="team-photo">
+                    <h3>Natasha Solanki</h3>
+                    <p>Sales Manager</p>
+                    <div class="description">Expert in deal-making.</div>
+                    <div class="social-icons">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+                <!-- More sales members -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll-to-top Button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
